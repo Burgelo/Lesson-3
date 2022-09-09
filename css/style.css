@@ -1,0 +1,21 @@
+body {
+	margin: 30px;
+}
+.header h1 {
+   color: brown;
+}
+.block h2 {
+	color: brown;
+}
+.block h3 {
+	color: rgb(105, 31, 31);
+}
+.block~p {
+   color: rgb(14, 14, 114);
+}
+a *{
+	color: blue;
+}
+.footer li {
+	color: blue;
+} 
