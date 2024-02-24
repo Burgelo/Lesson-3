@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task-2</title>
+</head>
+<body>
+	<div class="task__blok">
+		<h3 class="task__title">З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо у покупці, інакше, якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.</h3>		
+ 	</div>
+	<script>		
+		let priceGoods = parseInt(prompt("ціна товару"))
+		let quantityMoney = parseInt(prompt("кількість грошей"))
+		/*if (quantityMoney < priceGoods)
+		document.write(`Ви не можете придбати цей товар`)
+	     else		
+		document.write(`Дякую за купівлю. Пропоную Вам придбати ще лотерею за 4 гривні`)*/
+		document.write(priceGoods <= quantityMoney? `Дякую за купівлю. Пропоную Вам придбати ще лотерею за 4 гривні` :`Ви не можете придбати цей товар` )
+	</script>
+</body>
+</html>

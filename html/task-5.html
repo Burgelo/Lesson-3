@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task-5</title>
+</head>
+<body>
+	<div class="task__blok">
+		<h3 class="task__title">З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.</h3>		
+ 	</div>
+	<script>		
+		const category = prompt("Введіть букву категорії тр.засобу (А, В, С)")	
+		let transport		
+		switch (category) {
+			case "A": transport = `мотоцикл`				
+				break;
+				case "B": transport = `легковий автомобіль`				
+				break;
+				case "C": transport = `вантажний автомобіль`				
+				break;
+			default: transport = `Такої категорії не існує`
+				break;
+		}		
+		document.write(transport)
+
+	</script>
+</body>
+</html>

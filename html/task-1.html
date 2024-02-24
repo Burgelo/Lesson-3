@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task-1</title>
+</head>
+<body>
+	<div class="task__blok">
+		<h3 class="task__title">З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не екран ім’я тієї дитини, у якої кількість цукерок є більшою, або вивести, що кількість однакова.</h3>		
+ 	</div>
+	<script>	
+		const nameChildOne = prompt("Введіть ім'я хлопчика")
+		const nameChildTwo = prompt("Введіть ім'я дівчинки")
+
+		let sweetsChildOne = parseInt(prompt("Кількість цукерків для дівчинки"))
+		let sweetsChildTwo = parseInt(prompt("Кількість цукерків для хлопчика"))
+		let result
+		if (sweetsChildOne > sweetsChildTwo) result = `${nameChildOne} отримав більше цукерків`
+		else
+		if (sweetsChildOne < sweetsChildTwo) result = `${nameChildTwo} отримала більше цукерків`
+		else if (sweetsChildOne === sweetsChildTwo) result = `Діти отримали однакову кількість цукерків`
+		
+		document.write(result) 
+	</script>
+</body>
+</html>
